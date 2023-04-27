@@ -17,3 +17,8 @@ def load_data(name):
 def remove_file(name):
     if os.path.isfile('./data/' + name + '.pkl'):
         os.remove('./data/' + name + '.pkl')
+
+
+def create_dir():
+    if not os.path.isdir('./data'):
+        os.mkdir('./data')

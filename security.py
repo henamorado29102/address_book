@@ -1,3 +1,4 @@
+import data
 from data import load_data, save_data, remove_file
 from user import User
 
@@ -44,6 +45,7 @@ class Security:
         return True
 
     def create_admin(self):
+        data.create_dir()
         self.create('admin', 'admin')
 
     def remove(self, user):
