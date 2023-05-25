@@ -5,6 +5,7 @@ import maskpass
 my_book = Book()
 security = Security()
 
+
 if __name__ == '__main__':
     security.create_admin()
     while True:
@@ -31,7 +32,7 @@ if __name__ == '__main__':
             admin = security.is_admin()
             if admin:
                 while True:
-                    action = input("Commands (view(view users), del(remove users), exit: ")
+                    action = input("Commands view(view users), del(remove users), exit: ")
                     if action == 'view':
                         security.draw()
 
